@@ -2,6 +2,15 @@
 
 Rock Paper Scissors game that can be played entirely in the console.
 
+## Gameplay Guide
+
+### Open Game
+
+1. Visit game link: <https://4bdullah7eeshan.github.io/odin-recipes/>
+2. 
+
+
+
 ## Problem Solving Approach
 
 > Overall game flow plan
