@@ -84,6 +84,14 @@ function declareRoundWinner(winner) {
     }
 }
 
+function showRoundSummary(winner, computerChoice, humanChoice) {
+    if (winner === "human") {
+        console.log(`The computer chose "${computerChoice}". "${humanChoice}" beats "${computerChoice}!`);
+    } else {
+        console.log(`The computer chose "${computerChoice}". "${computerChoice}" beats "${humanChoice}"!`);
+    }
+}
+
 function playRound(humanChoice, computerChoice) {
     let caseInsensitiveHumanChoice,
         roundResult,
@@ -95,18 +103,9 @@ function playRound(humanChoice, computerChoice) {
 
     roundWinner = getRoundWinner(roundResult, caseInsensitiveHumanChoice);
 
+    declareRoundWinner(roundWinner);
 
-
-    // getRoundWinner(roundResult, ca)
-    // if (roundResult === caseInsensitiveHumanChoice) {
-    //     console.log(`You win! The computer chose "${computerChoice}". "${humanChoice}" beats "${computerChoice}"!`);
-    //     humanScore++;
-    // } else {
-    //     console.log(`You lose! The computer chose "${computerChoice}". "${computerChoice}" beats "${humanChoice}"!`);
-    //     computerScore++;
-    // }
-
-
+    showRoundSummary(roundWinner, computerChoice, caseInsensitiveHumanChoice);
 
 }
 
