@@ -29,6 +29,12 @@ function playRound(humanChoice, computerChoice) {
 
     roundResult = getRoundResult(caseInsenstivieHumanChoice, computerChoice);
 
+    if (roundResult === caseInsenstivieHumanChoice) {
+        humanScore++;
+    } else {
+        computerScore++;
+    }
+
 }
 
 function getRandomNumber(max) {
