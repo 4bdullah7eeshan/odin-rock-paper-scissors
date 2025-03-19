@@ -37,7 +37,35 @@ This game is going to be played:
 
 #### Steps From Input -> Output (Psuedocode)
 
-- First, we will ask the user to make a move!
+- First, we will ask the user to make a move!***
+    - Ask
+    - provide a way for the user to ...
+    - get the input
+        - the input may or may not be right. check it and reprompt
+    - store it in a var
+
+    ODIN
+    - Create a new function named getHumanChoice.
+    - Write the code so that getHumanChoice will return one of the valid choices depending on what the user inputs.
+        - Hint: Use the prompt method to get the user’s input.
+        - You do not need to handle reprompting if the user enters an invalid input, as that would require things we will teach later.
+    - For now, just assume the user will always enter a valid choice.
+    - Test what your function returns by using console.log.
+
+    FINAL PLAN
+    - Create a new function named getHumanChoice.
+    - create a variable to store users input
+    - setup a question to ask the user
+        - create a var
+        - store the question
+    - provide a way for the user to ... 
+        - use prompt
+        - with it we can merge the question + the way to get the users input ...
+        - once the user sends it we will get it
+    - get the input
+    - store in var
+    - console.log
+
 - Next, we will ask the computer to make a move!*
     - Once the move is made, we must get it as well, meaning show it to the user. That is simple.
 - Next, we will compare the user's and the computer's move!
