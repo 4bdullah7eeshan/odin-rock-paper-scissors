@@ -92,7 +92,7 @@ function declareRoundWinner(winner) {
 
 function showRoundSummary(winner, computerChoice, humanChoice) {
     if (winner === "human") {
-        console.log(`The computer chose "${computerChoice}". "${humanChoice}" beats "${computerChoice}!`);
+        console.log(`The computer chose "${computerChoice}". "${humanChoice}" beats "${computerChoice}"!`);
     } else if (winner === "computer") {
         console.log(`The computer chose "${computerChoice}". "${computerChoice}" beats "${humanChoice}"!`);
     } else {
