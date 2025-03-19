@@ -49,7 +49,9 @@ function getHumanChoice() {
 function getRoundResult(moveOne, moveTwo) {
     let roundResult;
 
-    if ((moveOne === "rock" && moveTwo === "paper") ||
+    if (moveOne === moveTwo) {
+        roundResult = "draw";
+    } else if ((moveOne === "rock" && moveTwo === "paper") ||
     (moveTwo === "rock" && moveOne === "paper")) {
          roundResult = "paper";
     } else if ((moveOne === "paper" && moveTwo === "scissors") ||
@@ -63,13 +65,15 @@ function getRoundResult(moveOne, moveTwo) {
     return roundResult;
 }
 
-function getRoundWinner(roundResult, humanChoice) {
+function getRoundWinner(roundResult, humanChoice, computerChoice) {
     let roundWinner;
 
     if (roundResult === humanChoice) {
         roundWinner = "human";
-    } else {
+    } else if (roundResult === computerChoice) {
         roundWinner = "computer";
+    } else {
+        roundWinner = "none";
     }
 
     return roundWinner;
@@ -79,16 +83,20 @@ function getRoundWinner(roundResult, humanChoice) {
 function declareRoundWinner(winner) {
     if (winner === "human") {
         console.log("You win!");
-    } else {
+    } else if (winner === "computer") {
         console.log("You lose!")
+    } else {
+        console.log("It's a draw!");
     }
 }
 
 function showRoundSummary(winner, computerChoice, humanChoice) {
     if (winner === "human") {
         console.log(`The computer chose "${computerChoice}". "${humanChoice}" beats "${computerChoice}!`);
-    } else {
+    } else if (winner === "computer") {
         console.log(`The computer chose "${computerChoice}". "${computerChoice}" beats "${humanChoice}"!`);
+    } else {
+        console.log(`The computer also chose "${computerChoice}".`);
     }
 }
 
@@ -101,7 +109,7 @@ function playRound(humanChoice, computerChoice) {
 
     roundResult = getRoundResult(caseInsensitiveHumanChoice, computerChoice);
 
-    roundWinner = getRoundWinner(roundResult, caseInsensitiveHumanChoice);
+    roundWinner = getRoundWinner(roundResult, caseInsensitiveHumanChoice, computerChoice);
 
     declareRoundWinner(roundWinner);
 
@@ -130,7 +138,7 @@ function playGame() {
 
         if (roundWinner === "human") {
             humanScore++;
-        } else {
+        } else if (roundWinner === "computer") {
             computerScore++;
         }
 
@@ -138,8 +146,10 @@ function playGame() {
 
     if (humanScore > computerScore) {
         console.log(`You won the game! Your score: ${humanScore}. Computer score: ${computerScore}.`);
-    } else {
+    } else if (computerScore > humanScore) {
         console.log(`You lost the game! Your score: ${humanScore}. Computer score: ${computerScore}.`);
+    } else {
+        console.log(`The game was a tie! Your score: ${humanScore}. Computer score: ${computerScore}.`)
     }
     
 }
