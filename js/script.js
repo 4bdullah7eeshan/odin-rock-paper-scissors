@@ -41,4 +41,6 @@ function getHumanChoice() {
         humanChoice;
 
     promptMessage = "Make a move! Rock? Paper? or Scissors?";
+
+    prompt(promptMessage);
 }
