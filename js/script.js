@@ -5,16 +5,20 @@ humanScore = 0;
 computerScore = 0;
 
 function getRoundResult(moveOne, moveTwo) {
+    let roundResult;
+
     if ((moveOne === "rock" && moveTwo === "paper") ||
     (moveTwo === "rock" && moveOne === "paper")) {
-         
-
+         roundResult = "paper";
     } else if ((moveOne === "paper" && moveTwo === "scissors") ||
     (moveTwo === "scissors" && moveOne === "paper")) {
-
+        roundResult = "scissors";
     } else {
         // sd be safe?
+        roundResult = "rock"
     }
+
+    return roundResult;
 }
 
 function getRandomNumber(max) {
