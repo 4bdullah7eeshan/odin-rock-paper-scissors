@@ -47,6 +47,7 @@ function playGame() {
         humanChoice;
 
     computerChoice = getComputerChoice();
+    humanChoice = getHumanChoice();
 }
 
 function getRandomNumber(max) {
