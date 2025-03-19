@@ -37,5 +37,8 @@ function getComputerChoice() {
 console.log(getComputerChoice());
 
 function getHumanChoice() {
+    let promptMessage,
+        humanChoice;
+
     
 }
