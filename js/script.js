@@ -108,3 +108,5 @@ function playGame() {
     }
     
 }
+
+playGame();
