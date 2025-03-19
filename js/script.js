@@ -42,7 +42,7 @@ function playRound(humanChoice, computerChoice) {
 }
 
 function playGame() {
-    
+    // this should invoke everything...this sets up the gameflow from start to finish
 }
 
 function getRandomNumber(max) {
