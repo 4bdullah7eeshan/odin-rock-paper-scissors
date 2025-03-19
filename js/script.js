@@ -107,14 +107,17 @@ function playRound(humanChoice, computerChoice) {
 
     showRoundSummary(roundWinner, computerChoice, caseInsensitiveHumanChoice);
 
+    return roundWinner;
 }
+
 
 function playGame() {
     // this should invoke everything...this sets up the gameflow from start to finish
     let humanScore,
         computerScore,
         humanChoice,
-        computerChoice;
+        computerChoice,
+        roundWinner;
 
     humanScore = 0;
     computerScore = 0;
@@ -123,7 +126,14 @@ function playGame() {
         computerChoice = getComputerChoice();
         humanChoice = getHumanChoice();
 
-        playRound(humanChoice, computerChoice);
+        roundWinner = playRound(humanChoice, computerChoice);
+
+        if (roundWinner === "human") {
+            humanScore++;
+        } else {
+            computerScore++;
+        }
+
     }
 
     if (humanScore > computerScore) {
