@@ -180,4 +180,10 @@ Our game will play 5 rounds. We will write a function named playGame that calls 
 - get comp choice & store it
 - get user choice & store it
 - while round count is not 5, play the rounds
-- declare final result... 
+- declare final result...
+
+---
+
+FINAL REFACTORING
+
+- Need to make the functions more atomic by carving out functionalities.

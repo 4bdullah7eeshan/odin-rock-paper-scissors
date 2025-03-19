@@ -63,21 +63,40 @@ function getRoundResult(moveOne, moveTwo) {
     return roundResult;
 }
 
+function getRoundWinner(roundResult, humanChoice) {
+    let roundWinner;
+
+    if (roundResult === humanChoice) {
+        roundWinner = "human";
+    } else {
+        roundWinner = "computer";
+    }
+
+    return roundWinner;
+
+}
+
 function playRound(humanChoice, computerChoice) {
     let caseInsensitiveHumanChoice,
-        roundResult;
+        roundResult,
+        roundWinner;
 
     caseInsensitiveHumanChoice = humanChoice.toLowerCase();
 
     roundResult = getRoundResult(caseInsensitiveHumanChoice, computerChoice);
 
-    if (roundResult === caseInsensitiveHumanChoice) {
-        console.log(`You win! The computer chose "${computerChoice}". "${humanChoice}" beats "${computerChoice}"!`);
-        humanScore++;
-    } else {
-        console.log(`You lose! The computer chose "${computerChoice}". "${computerChoice}" beats "${humanChoice}"!`);
-        computerScore++;
-    }
+    roundWinner = getRoundWinner(roundResult, caseInsensitiveHumanChoice);
+
+
+
+    // getRoundWinner(roundResult, ca)
+    // if (roundResult === caseInsensitiveHumanChoice) {
+    //     console.log(`You win! The computer chose "${computerChoice}". "${humanChoice}" beats "${computerChoice}"!`);
+    //     humanScore++;
+    // } else {
+    //     console.log(`You lose! The computer chose "${computerChoice}". "${computerChoice}" beats "${humanChoice}"!`);
+    //     computerScore++;
+    // }
 
 
 
