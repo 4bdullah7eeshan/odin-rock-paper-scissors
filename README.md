@@ -118,3 +118,10 @@ This game is going to be played:
 - but we want only integers...so ...
 - 0 <= Math.floor(Math.random() * n) < n ; will give us integer bt 0 & n
 - 
+
+- next: Declare the players score variables
+
+Your game will keep track of the players score. You will write variables to keep track of the players score.
+
+Create two new variables named humanScore and computerScore in the global scope.
+Initialize those variables with the value of 0.
