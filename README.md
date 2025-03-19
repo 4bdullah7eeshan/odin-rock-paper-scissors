@@ -53,6 +53,17 @@ This game is going to be played:
     - Write the code so that `getComputerChoice` will randomly return one of the following string values: “rock”, “paper” or “scissors”.
         - Use `Math.random` method. It returns a random number that’s greater than or equal to 0 and less than 1. We need to think about how we can use this to conditionally return one of the multiple choices.
             - Use it to return 1/2/3 randomly. 1/2/3 serves as a multiple choice.
+                - How? The lesson linked [this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) documentation. It has the following code we can use:
+
+                    ```js
+                    function getRandomInt(max) {
+                        return Math.floor(Math.random() * max);
+                    }
+
+                    console.log(getRandomInt(3));
+                    // Expected output: 0, 1 or 2
+                    ```
+
             - Based on each choice, assign either “rock”, “paper” or “scissors”, eg. 1 for "rock", etc.
             - Return the choice
     - Test that our function returns what we expect.
