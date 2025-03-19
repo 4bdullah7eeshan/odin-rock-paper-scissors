@@ -18,5 +18,18 @@ function getRandomNumber(max) {
 }
 
 function getComputerChoice() {
+    let randomNumber,
+        computerChoice;
 
+    randomNumber = getRandomNumber(3);
+
+    if (randomNumber === 0) {
+        computerChoice = "rock";
+    } else if (randomNumber === 1) {
+        computerChoice = "paper";
+    } else {
+        computerChoice = "scissors";
+    }
+
+    return computerChoice;
 }
