@@ -22,11 +22,12 @@ function getRoundResult(moveOne, moveTwo) {
 }
 
 function playRound(humanChoice, computerChoice) {
-    let caseInsenstivieHumanChoice;
+    let caseInsenstivieHumanChoice,
+        roundResult;
 
     caseInsenstivieHumanChoice = humanChoice.toLowerCase();
 
-    
+    roundResult = getRoundResult(caseInsenstivieHumanChoice, computerChoice);
 
 }
 
