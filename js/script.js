@@ -1,3 +1,7 @@
-function getComputerChoice() {
+function getRandomNumber(max) {
     
+}
+
+function getComputerChoice() {
+
 }
