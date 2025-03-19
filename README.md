@@ -187,3 +187,8 @@ Our game will play 5 rounds. We will write a function named playGame that calls 
 FINAL REFACTORING
 
 - Need to make the functions more atomic by carving out functionalities.
+
+---
+
+CORE FLAWS: HANDLE DRAW CASE
+CORE REFACTORING: HANDLE SCORE SEP
