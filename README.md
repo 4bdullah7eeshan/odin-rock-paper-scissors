@@ -125,3 +125,41 @@ Your game will keep track of the players score. You will write variables to keep
 
 Create two new variables named humanScore and computerScore in the global scope.
 Initialize those variables with the value of 0.
+
+- next: Write the logic to play a single round
+Our game will be played round by round.
+
+Let us think about a single round first.
+
+We will need to write a function that takes the human and computer player choices as arguments:
+- plays a single round, essentially meaning checking who won!
+- increments the round winner’s score
+- logs a winner announcement
+
+Q: how will our function get the human and computer player choices? we need to call the earlier functions store their outputs and then pass to out fn.
+
+
+Create a new function named playRound.
+Define two parameters for playRound: humanChoice and computerChoice. Use these two parameters to take the human and computer choices as arguments.
+Make your function’s humanChoice parameter case-insensitive so that players can input “rock”, “ROCK”, “RocK”, or other variations.
+Write the code for your playRound function to console.log a string value representing the round winner, such as: “You lose! Paper beats Rock”.
+Increment the humanScore or computerScore variable based on the round winner.
+
+draw too..
+
+final steps:
+- Create a new function named playRound.
+- Define two parameters for playRound: humanChoice and computerChoice.
+- Make your function’s humanChoice parameter case-insensitive so that players can input “rock”, “ROCK”, “RocK”, or other variations.
+- now use the case-insensitive player choice and comp choice to get the game result
+    - create a sep function that gets round result
+        - takes two moves
+        - based on the moves we will have a set of conditional statements...
+        - which move wins will be declared/returned
+    - we also need to keep track of who made the move?
+        - once we get the round results.
+        - check who is associated with thr round result...
+        - 
+- increment human score
+
+CREATE A SEP FUNC FIRST
