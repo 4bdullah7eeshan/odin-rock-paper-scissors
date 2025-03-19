@@ -4,8 +4,8 @@ let humanScore,
 humanScore = 0;
 computerScore = 0;
 
-function getRoundResult() {
-    
+function getRoundResult(moveOne, moveTwo) {
+
 }
 
 function getRandomNumber(max) {
