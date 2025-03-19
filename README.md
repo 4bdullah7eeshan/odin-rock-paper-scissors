@@ -1,4 +1,4 @@
-# Rock Paper Scissors
+# Odin Rock Paper Scissors
 
 Rock Paper Scissors game created using JavaScript that can be played entirely in the console.
 
