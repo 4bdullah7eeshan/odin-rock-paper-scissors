@@ -64,14 +64,14 @@ function getRoundResult(moveOne, moveTwo) {
 }
 
 function playRound(humanChoice, computerChoice) {
-    let caseInsenstivieHumanChoice,
+    let caseInsensitiveHumanChoice,
         roundResult;
 
-    caseInsenstivieHumanChoice = humanChoice.toLowerCase();
+    caseInsensitiveHumanChoice = humanChoice.toLowerCase();
 
-    roundResult = getRoundResult(caseInsenstivieHumanChoice, computerChoice);
+    roundResult = getRoundResult(caseInsensitiveHumanChoice, computerChoice);
 
-    if (roundResult === caseInsenstivieHumanChoice) {
+    if (roundResult === caseInsensitiveHumanChoice) {
         console.log(`You win! The computer chose "${computerChoice}". "${humanChoice}" beats "${computerChoice}"!`);
         humanScore++;
     } else {
