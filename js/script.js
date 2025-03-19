@@ -3,8 +3,11 @@ function getRandomNumber(max) {
         randomRationalNumberBetweenZeroAndMax,
         randomIntegerBetweenZeroAndMax;
     
-    
+    randomDecimalBetweenZeroAndOne = Math.random();
+    randomRationalNumberBetweenZeroAndMax = randomDecimalBetweenZeroAndOne * max;
+    randomIntegerBetweenZeroAndMax = Math.floor(randomRationalNumberBetweenZeroAndMax);
 
+    return randomIntegerBetweenZeroAndMax;
 }
 
 function getComputerChoice() {
