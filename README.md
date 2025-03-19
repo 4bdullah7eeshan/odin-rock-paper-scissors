@@ -52,5 +52,8 @@ This game is going to be played:
     - Create a new function named `getComputerChoice`.
     - Write the code so that `getComputerChoice` will randomly return one of the following string values: “rock”, “paper” or “scissors”.
         - Use `Math.random` method. It returns a random number that’s greater than or equal to 0 and less than 1. We need to think about how we can use this to conditionally return one of the multiple choices.
+            - Use it to return 1/2/3 randomly. 1/2/3 serves as a multiple choice.
+            - Based on each choice, assign either “rock”, “paper” or “scissors”, eg. 1 for "rock", etc.
+            - Return the choice
     - Test that our function returns what we expect.
         - How? Using `console.log()`.
