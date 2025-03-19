@@ -163,3 +163,15 @@ final steps:
 - increment human score
 
 CREATE A SEP FUNC FIRST
+
+---
+
+FINAL STEP: Write the logic to play the entire game
+
+Our game will play 5 rounds. We will write a function named playGame that calls playRound to play 5 rounds, keeps track of the scores and declares a winner at the end.
+
+- Create a new function named playGame.
+- Move your playRound function and score variables so that they’re declared inside of the new playGame function
+- Play 5 rounds by calling playRound 5 times.
+    - Hint: When you assign a function call to a variable, the return value of that function is assigned to the variable. Accessing the variable afterward will only provide the assigned value; it doesn’t recall the function. You need to recall the choice functions to get new choices for each round.
+    - Re-work your previous functions or create more helper functions if necessary. Specifically, you may want to change the return values to something more useful.
