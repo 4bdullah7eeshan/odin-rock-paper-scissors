@@ -45,6 +45,8 @@ function playGame() {
     // this should invoke everything...this sets up the gameflow from start to finish
     let computerChoice,
         humanChoice;
+
+    computerChoice = getComputerChoice();
 }
 
 function getRandomNumber(max) {
