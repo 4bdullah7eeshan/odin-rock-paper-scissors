@@ -1,6 +1,9 @@
 let humanScore,
     computerScore;
 
+humanScore = 0;
+computerScore = 0;
+
 function getRandomNumber(max) {
     // This function takes a `max` number and returns a number from `0` to `max - 1` randomly
 
