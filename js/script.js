@@ -76,6 +76,14 @@ function getRoundWinner(roundResult, humanChoice) {
 
 }
 
+function declareRoundWinner(winner) {
+    if (winner === "human") {
+        console.log("You win!");
+    } else {
+        console.log("You lose!")
+    }
+}
+
 function playRound(humanChoice, computerChoice) {
     let caseInsensitiveHumanChoice,
         roundResult,
