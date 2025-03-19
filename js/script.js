@@ -52,6 +52,12 @@ function playGame() {
 
         playRound(humanChoice, computerChoice);
     }
+
+    if (humanScore > computerScore) {
+        console.log("You won the game!");
+    } else {
+        console.log("You lost the game!");
+    }
     
 }
 
