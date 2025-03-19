@@ -48,6 +48,8 @@ function playGame() {
 
     computerChoice = getComputerChoice();
     humanChoice = getHumanChoice();
+
+    playRound(humanChoice, computerChoice);
 }
 
 function getRandomNumber(max) {
