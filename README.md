@@ -81,3 +81,12 @@ This game is going to be played:
     - var for move
     - based on rand it if else... set var
     - return var
+
+`getRandomNumber`
+
+- `Math.random()` gets a number between 0(inc) and 1.
+- 0 <=  Math.random() < 1
+- 0 <= Math.random() * n < n (multiplying the inequality with n, we get random numbers between 0 and n)
+- but we want only integers...so ...
+- 0 <= Math.floor(Math.random() * n) < n ; will give us integer bt 0 & n
+- 
