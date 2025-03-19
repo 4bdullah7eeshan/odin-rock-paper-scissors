@@ -102,9 +102,9 @@ function playGame() {
     }
 
     if (humanScore > computerScore) {
-        console.log("You won the game!");
+        console.log(`You won the game! Your score: ${humanScore}. Computer score: ${computerScore}.`);
     } else {
-        console.log("You lost the game!");
+        console.log(`You lost the game! Your score: ${humanScore}. Computer score: ${computerScore}.`);
     }
     
 }
