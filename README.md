@@ -4,7 +4,7 @@ Rock Paper Scissors game created using JavaScript that can be played entirely in
 
 ## How to play?
 
-1. Visit the game link: <https://4bdullah7eeshan.github.io/odin-recipes/>
+1. Visit the game link: <https://4bdullah7eeshan.github.io/odin-rock-paper-scissors/>
 
 ![Odin RPS Game Launch](./utils/screenshots/odin-rps-game-launch.png)
 
