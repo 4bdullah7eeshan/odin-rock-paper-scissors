@@ -22,6 +22,9 @@ function getRoundResult(moveOne, moveTwo) {
 }
 
 function playRound(humanChoice, computerChoice) {
+    let caseInsenstivieHumanChoice;
+
+    
 
 }
 
