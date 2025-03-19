@@ -41,6 +41,10 @@ function playRound(humanChoice, computerChoice) {
 
 }
 
+function playGame() {
+    
+}
+
 function getRandomNumber(max) {
     // This function takes a `max` number and returns a number from `0` to `max - 1` randomly
 
