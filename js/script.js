@@ -5,7 +5,16 @@ humanScore = 0;
 computerScore = 0;
 
 function getRoundResult(moveOne, moveTwo) {
+    if ((moveOne === "rock" && moveTwo === "paper") ||
+    (moveTwo === "rock" && moveOne === "paper")) {
+         
 
+    } else if ((moveOne === "paper" && moveTwo === "scissors") ||
+    (moveTwo === "scissors" && moveOne === "paper")) {
+
+    } else {
+        // sd be safe?
+    }
 }
 
 function getRandomNumber(max) {
