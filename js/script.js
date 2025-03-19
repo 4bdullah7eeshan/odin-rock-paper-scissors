@@ -46,10 +46,13 @@ function playGame() {
     let computerChoice,
         humanChoice;
 
-    computerChoice = getComputerChoice();
-    humanChoice = getHumanChoice();
+    for (let i = 0; i < 5; i++) {
+        computerChoice = getComputerChoice();
+        humanChoice = getHumanChoice();
 
-    playRound(humanChoice, computerChoice);
+        playRound(humanChoice, computerChoice);
+    }
+    
 }
 
 function getRandomNumber(max) {
