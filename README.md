@@ -65,6 +65,7 @@ This game is going to be played:
                     ```
 
             - Based on each choice, assign either “rock”, “paper” or “scissors”, eg. 1 for "rock", etc.
+                - Once, we get the number 0/1/2, we can use conditional statements here to assign. 
             - Return the choice
     - Test that our function returns what we expect.
         - How? Using `console.log()`.
