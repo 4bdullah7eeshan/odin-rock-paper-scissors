@@ -40,5 +40,5 @@ function getHumanChoice() {
     let promptMessage,
         humanChoice;
 
-    
+    promptMessage = "Make a move! Rock? Paper? or Scissors?";
 }
