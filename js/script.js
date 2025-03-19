@@ -97,8 +97,6 @@ function getComputerChoice() {
     return computerChoice;
 }
 
-console.log(getComputerChoice());
-
 function getHumanChoice() {
     let promptMessage,
         humanChoice;
@@ -109,5 +107,3 @@ function getHumanChoice() {
 
     return humanChoice;
 }
-
-console.log(getHumanChoice());
