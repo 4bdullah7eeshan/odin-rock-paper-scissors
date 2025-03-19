@@ -30,10 +30,10 @@ function playRound(humanChoice, computerChoice) {
     roundResult = getRoundResult(caseInsenstivieHumanChoice, computerChoice);
 
     if (roundResult === caseInsenstivieHumanChoice) {
-        console.log("You win!");
+        console.log(`You win! ${humanChoice} beats ${computerChoice}`);
         humanScore++;
     } else {
-        console.log("You lose!");
+        console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
         computerScore++;
     }
 
