@@ -69,3 +69,15 @@ This game is going to be played:
             - Return the choice
     - Test that our function returns what we expect.
         - How? Using `console.log()`.
+
+`getComputerChoice`
+- Created a function
+- inside this function, we need a choice randomly 0/1/2. How to get?
+- Create another function that generates a random choice. the `getRandomInt`
+- call it from this
+- we get some value
+- store it inside a var
+- based on the result 0/1/2 make a move
+    - var for move
+    - based on rand it if else... set var
+    - return var
