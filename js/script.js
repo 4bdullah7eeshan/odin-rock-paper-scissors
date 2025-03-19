@@ -21,7 +21,7 @@ function getRoundResult(moveOne, moveTwo) {
     return roundResult;
 }
 
-function playRound() {
+function playRound(humanChoice, computerChoice) {
 
 }
 
